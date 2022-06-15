@@ -1,6 +1,8 @@
 # Code Kata for Golang #1
 
-[A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition.](<https://en.wikipedia.org/wiki/Kata_(programming)>)c.
+> Based on previous work by [echocat](https://github.com/echocat/golang-kata-1)
+
+[A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition.](<https://en.wikipedia.org/wiki/Kata_(programming)>).
 
 - [Topic](#topic)
 - [Frame conditions](#frame-conditions)
