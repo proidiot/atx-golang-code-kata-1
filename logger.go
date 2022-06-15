@@ -3,6 +3,7 @@ package main
 import (
 	"io"
 	"os"
+	"time"
 
 	"github.com/rs/zerolog"
 )
@@ -25,7 +26,7 @@ func logWriter(env string) zerolog.ConsoleWriter {
 		output = os.Stdout
 	}
 
-	return zerolog.ConsoleWriter{Out: output, TimeFormat: ISO8601}
+	return zerolog.ConsoleWriter{Out: output, TimeFormat: time.RFC3339Nano}
 }
 
 // NewLogger returns a new pointer to Logger.

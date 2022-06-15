@@ -6,8 +6,6 @@ include .env
 .PHONY: default init build clean test start
 .DEFAULT_GOAL = default
 
-AWS_PROFILE ?=
-AWS ?= aws --profile ${AWS_PROFILE}
 PROJECT ?= $(shell basename $$PWD)
 
 default:
@@ -26,7 +24,7 @@ clean:
 
 # run tests
 test:
-	@ APP_ENV=test go test -v ./...
+	@ APP_ENV=test go test -cover -v ./...
 
 # start the app
 start:

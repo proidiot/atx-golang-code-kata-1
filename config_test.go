@@ -1,12 +1,12 @@
 package main
 
-func (suite *SkeletonTestSuite) TestNewConfig() {
+func (suite *KataTestSuite) TestNewConfig() {
 	conf, err := NewConfig()
 	suite.NoError(err)
 	suite.IsType(Config{}, conf)
 }
 
-func (suite *SkeletonTestSuite) TestConfig() {
+func (suite *KataTestSuite) TestConfig() {
 	suite.NotEmpty(suite.Conf.AppName)
 	suite.Equal("test", suite.Conf.AppEnv)
 }
