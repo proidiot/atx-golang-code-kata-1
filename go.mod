@@ -1,4 +1,4 @@
-module github.com/fathom5/code-kata-1
+module github.com/proidiot/atx-golang-code-kata-1
 
 go 1.18
 
